@@ -14,23 +14,20 @@ export default function DemoLayout({ title, description, sourceCode, sourceUrl, 
 
   return (
     <div className="mx-auto max-w-4xl px-6 py-10">
-      <div className="flex items-center justify-between">
-        <div>
-          <Link
-            to="/"
-            className="text-xs text-muted-foreground transition-colors hover:text-foreground"
-          >
-            &larr; Back
-          </Link>
-          <h1 className="mt-2 text-lg font-semibold tracking-tight">
-            {title}
-          </h1>
-          <p className="mt-1 text-sm text-muted-foreground">
-            {description}
-          </p>
-        </div>
-
-        <div className="flex items-center gap-3">
+      <div>
+        <Link
+          to="/"
+          className="text-xs text-muted-foreground transition-colors hover:text-foreground"
+        >
+          &larr; Back
+        </Link>
+        <h1 className="mt-2 text-lg font-semibold tracking-tight">
+          {title}
+        </h1>
+        <p className="mt-1 text-sm text-muted-foreground">
+          {description}
+        </p>
+        <div className="mt-3 flex items-center gap-2">
           {sourceUrl && (
             <a
               href={sourceUrl}
@@ -39,7 +36,7 @@ export default function DemoLayout({ title, description, sourceCode, sourceUrl, 
               className="flex items-center gap-1.5 rounded-md border border-border bg-muted/50 px-3 py-1.5 text-xs text-muted-foreground transition-all hover:bg-muted hover:text-foreground"
             >
               View original
-              <svg className="h-3 w-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+              <svg className="h-3 w-3 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
               </svg>
             </a>
