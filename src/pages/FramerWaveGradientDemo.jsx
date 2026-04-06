@@ -1,19 +1,18 @@
 import DemoLayout from "@/components/DemoLayout"
-import OpenAIWaveGradient, { THEMES } from "@/components/OpenAIWaveGradient"
-import sourceCode from "@/components/OpenAIWaveGradient.jsx?raw"
+import FramerWaveGradient, { THEMES } from "@/components/FramerWaveGradient"
+import sourceCode from "@/components/FramerWaveGradient.jsx?raw"
 import { useState } from "react"
 
 const themeKeys = Object.keys(THEMES)
 
-export default function OpenAIWaveGradientDemo() {
-  const [activeTheme, setActiveTheme] = useState("amber")
+export default function FramerWaveGradientDemo() {
+  const [activeTheme, setActiveTheme] = useState("sunset")
 
   return (
     <DemoLayout
-      title="OpenAI Wave Gradient"
-      description="WebGL2 animated wave gradient with configurable color themes."
+      title="Framer Wave Gradient"
+      description="WebGL2 animated wave gradient with flowing organic color layers."
       sourceCode={sourceCode}
-      sourceUrl="https://playground.davidumoru.me/"
       controls={
         <div className="mt-6 flex flex-col items-center gap-3">
           <span className="text-[10px] font-semibold uppercase tracking-widest text-muted-foreground">
@@ -33,9 +32,9 @@ export default function OpenAIWaveGradientDemo() {
                 <div
                   className="h-full w-full rounded-full"
                   style={{
-                    background: `linear-gradient(135deg, rgb(${THEMES[theme].main
+                    background: `linear-gradient(135deg, rgb(${THEMES[theme].color1
                       .map((c) => Math.round(c * 255))
-                      .join(",")}), rgb(${THEMES[theme].low
+                      .join(",")}), rgb(${THEMES[theme].color3
                         .map((c) => Math.round(c * 255))
                         .join(",")})`,
                   }}
@@ -46,7 +45,7 @@ export default function OpenAIWaveGradientDemo() {
         </div>
       }
     >
-      <OpenAIWaveGradient
+      <FramerWaveGradient
         colors={THEMES[activeTheme]}
         className="aspect-video"
       />

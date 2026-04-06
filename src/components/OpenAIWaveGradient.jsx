@@ -1,5 +1,5 @@
-import { useEffect, useRef, useState } from "react"
 import { cn } from "@/lib/utils"
+import { useEffect, useRef, useState } from "react"
 
 // Uses the exact same shader as beeblast-website NoiseShader.tsx
 // The getOrb() function computes the wave gradient; main() outputs color only (no SDF clipping)
