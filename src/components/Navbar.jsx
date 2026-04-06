@@ -8,7 +8,17 @@ export default function Navbar() {
         <Link to="/" className="text-sm font-semibold tracking-tight text-foreground">
           Phicks's Component Collection
         </Link>
-        <ThemeSwitcher />
+        <div className="flex items-center gap-4">
+          <a
+            href="https://phickstran.com/about"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-xs text-muted-foreground transition-colors hover:text-foreground"
+          >
+            About
+          </a>
+          <ThemeSwitcher />
+        </div>
       </div>
     </header>
   )
