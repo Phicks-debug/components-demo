@@ -1,26 +1,26 @@
-import Navbar from "@/components/Navbar"
-import BauhausGridDemo from "@/pages/BauhausGridDemo"
-import ConfettiDemo from "@/pages/ConfettiDemo"
-import FramerWaveGradientDemo from "@/pages/FramerWaveGradientDemo"
-import HexTextDemo from "@/pages/HexTextDemo"
-import Home from "@/pages/Home"
-import LiquidGradientDemo from "@/pages/LiquidGradientDemo"
-import MeshNoiseDemo from "@/pages/MeshNoiseDemo"
-import OpenAIWaveGradientDemo from "@/pages/OpenAIWaveGradientDemo"
-import PatternCanvasDemo from "@/pages/PatternCanvasDemo"
-import ParticleGlobeDemo from "@/pages/ParticleGlobeDemo"
-import ParticlesDemo from "@/pages/ParticlesDemo"
-import PixelizeDemo from "@/pages/PixelizeDemo"
-import GeometryMotifDemo from "@/pages/GeometryMotifDemo"
-import GradientBarsDemo from "@/pages/GradientBarsDemo"
-import PointerFieldDemo from "@/pages/PointerFieldDemo"
-import BezierFlowDemo from "@/pages/BezierFlowDemo"
-import ContourFlowDemo from "@/pages/ContourFlowDemo"
-import ReactionDiffusionDemo from "@/pages/ReactionDiffusionDemo"
-import WarholTypeDemo from "@/pages/WarholTypeDemo"
-import WarpTextDemo from "@/pages/WarpTextDemo"
-import { ThemeProvider } from "next-themes"
-import { BrowserRouter, Route, Routes } from "react-router-dom"
+import Navbar from "@/components/Navbar";
+import BauhausGridDemo from "@/pages/BauhausGridDemo";
+import BezierFlowDemo from "@/pages/BezierFlowDemo";
+import ConfettiDemo from "@/pages/ConfettiDemo";
+import ContourFlowDemo from "@/pages/ContourFlowDemo";
+import FramerWaveGradientDemo from "@/pages/FramerWaveGradientDemo";
+import GeometryMotifDemo from "@/pages/GeometryMotifDemo";
+import GradientBarsDemo from "@/pages/GradientBarsDemo";
+import HexTextDemo from "@/pages/HexTextDemo";
+import Home from "@/pages/Home";
+import LiquidGradientDemo from "@/pages/LiquidGradientDemo";
+import MeshNoiseDemo from "@/pages/MeshNoiseDemo";
+import OpenAIWaveGradientDemo from "@/pages/OpenAIWaveGradientDemo";
+import ParticleGlobeDemo from "@/pages/ParticleGlobeDemo";
+import ParticlesDemo from "@/pages/ParticlesDemo";
+import PatternCanvasDemo from "@/pages/PatternCanvasDemo";
+import PixelizeDemo from "@/pages/PixelizeDemo";
+import PointerFieldDemo from "@/pages/PointerFieldDemo";
+import ReactionDiffusionDemo from "@/pages/ReactionDiffusionDemo";
+import WarholTypeDemo from "@/pages/WarholTypeDemo";
+import WarpTextDemo from "@/pages/WarpTextDemo";
+import { ThemeProvider } from "next-themes";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 function App() {
   return (
@@ -49,6 +49,7 @@ function App() {
             <Route path="/contour-flow" element={<ContourFlowDemo />} />
             <Route path="/warp-text" element={<WarpTextDemo />} />
             <Route path="/reaction-diffusion" element={<ReactionDiffusionDemo />} />
+            <Route path="/dither-avatar" element={<DitherAvatarDemo />} />
           </Routes>
         </div>
       </BrowserRouter>
