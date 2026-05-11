@@ -1,24 +1,24 @@
-import BauhausGrid from "@/components/BauhausGrid"
-import GeometryMotif from "@/components/GeometryMotif"
-import GradientBars from "@/components/GradientBars"
-import Confetti from "@/components/Confetti"
-import HexText from "@/components/HexText"
-import ParticleGlobe from "@/components/ParticleGlobe"
-import Particles from "@/components/Particles"
-import FramerWaveGradient from "@/components/FramerWaveGradient"
-import LiquidGradient from "@/components/LiquidGradient"
-import MeshNoise from "@/components/MeshNoise"
-import OpenAIWaveGradient from "@/components/OpenAIWaveGradient"
-import PatternCanvas from "@/components/PatternCanvas"
-import Pixelize from "@/components/Pixelize"
-import PointerField from "@/components/PointerField"
-import BezierFlow from "@/components/BezierFlow"
-import ContourFlow from "@/components/ContourFlow"
-import WarholType from "@/components/WarholType"
-import ReactionDiffusion from "@/components/ReactionDiffusion"
-import WarpText from "@/components/WarpText"
-import { DitherAvatar } from "@/components/DitherAvatar"
-import { Link } from "react-router-dom"
+import BauhausGrid from "@/components/BauhausGrid";
+import BezierFlow from "@/components/BezierFlow";
+import Confetti from "@/components/Confetti";
+import ContourFlow from "@/components/ContourFlow";
+import { DitherAvatar } from "@/components/DitherAvatar";
+import FramerWaveGradient from "@/components/FramerWaveGradient";
+import GeometryMotif from "@/components/GeometryMotif";
+import GradientBars from "@/components/GradientBars";
+import HexText from "@/components/HexText";
+import LiquidGradient from "@/components/LiquidGradient";
+import MeshNoise from "@/components/MeshNoise";
+import OpenAIWaveGradient from "@/components/OpenAIWaveGradient";
+import ParticleGlobe from "@/components/ParticleGlobe";
+import Particles from "@/components/Particles";
+import PatternCanvas from "@/components/PatternCanvas";
+import Pixelize from "@/components/Pixelize";
+import PointerField from "@/components/PointerField";
+import ReactionDiffusion from "@/components/ReactionDiffusion";
+import WarholType from "@/components/WarholType";
+import WarpText from "@/components/WarpText";
+import { Link } from "react-router-dom";
 
 const components = [
   {
