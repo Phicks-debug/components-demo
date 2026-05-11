@@ -17,6 +17,7 @@ import ContourFlow from "@/components/ContourFlow"
 import WarholType from "@/components/WarholType"
 import ReactionDiffusion from "@/components/ReactionDiffusion"
 import WarpText from "@/components/WarpText"
+import { DitherAvatar } from "@/components/DitherAvatar"
 import { Link } from "react-router-dom"
 
 const components = [
@@ -151,6 +152,13 @@ const components = [
     path: "/warp-text",
     preview: <WarpText className="absolute inset-0 h-full w-full" />,
     source: { label: "openprocessing.org", url: "https://openprocessing.org/sketch/2850448" },
+  },
+  {
+    title: "DitherAvatar",
+    description: "Deterministic dithered avatar SVGs generated from a seed string using Bayer 4x4 ordered dithering.",
+    path: "/dither-avatar",
+    preview: <DitherAvatar seed="demo" size={256} className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2" />,
+    previewBg: "bg-black",
   },
   {
     title: "Reaction Diffusion",

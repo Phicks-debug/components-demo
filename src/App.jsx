@@ -2,6 +2,7 @@ import Navbar from "@/components/Navbar";
 import BauhausGridDemo from "@/pages/BauhausGridDemo";
 import BezierFlowDemo from "@/pages/BezierFlowDemo";
 import ConfettiDemo from "@/pages/ConfettiDemo";
+import DitherAvatarDemo from "@/pages/DitherAvatarDemo";
 import ContourFlowDemo from "@/pages/ContourFlowDemo";
 import FramerWaveGradientDemo from "@/pages/FramerWaveGradientDemo";
 import GeometryMotifDemo from "@/pages/GeometryMotifDemo";
